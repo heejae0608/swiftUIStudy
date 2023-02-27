@@ -11,6 +11,10 @@
 		F4A6021929AC9EB60010C04D /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6021829AC9EB60010C04D /* ActivityView.swift */; };
 		F4A6021D29ACB3CD0010C04D /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6021C29ACB3CD0010C04D /* RingShape.swift */; };
 		F4A6021F29ACB45D0010C04D /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6021E29ACB45D0010C04D /* ActivityRingView.swift */; };
+		F4A6022129ACD9530010C04D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6022029ACD9530010C04D /* ProfileView.swift */; };
+		F4A6022329ACDAB70010C04D /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6022229ACDAB70010C04D /* ExerciseListView.swift */; };
+		F4A6022529ACDBC80010C04D /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6022429ACDBC80010C04D /* ExerciseDetailView.swift */; };
+		F4A6022729ACDF380010C04D /* ExerciseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6022629ACDF380010C04D /* ExerciseCardView.swift */; };
 		F4D833FA29AC83A5008D8623 /* SwiftUIStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D833F929AC83A5008D8623 /* SwiftUIStudyApp.swift */; };
 		F4D833FC29AC83A5008D8623 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D833FB29AC83A5008D8623 /* ContentView.swift */; };
 		F4D833FE29AC83A6008D8623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D833FD29AC83A6008D8623 /* Assets.xcassets */; };
@@ -24,6 +28,10 @@
 		F4A6021829AC9EB60010C04D /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		F4A6021C29ACB3CD0010C04D /* RingShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
 		F4A6021E29ACB45D0010C04D /* ActivityRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
+		F4A6022029ACD9530010C04D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F4A6022229ACDAB70010C04D /* ExerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
+		F4A6022429ACDBC80010C04D /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
+		F4A6022629ACDF380010C04D /* ExerciseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCardView.swift; sourceTree = "<group>"; };
 		F4D833F629AC83A5008D8623 /* SwiftUIStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D833F929AC83A5008D8623 /* SwiftUIStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStudyApp.swift; sourceTree = "<group>"; };
 		F4D833FB29AC83A5008D8623 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,8 +68,12 @@
 			isa = PBXGroup;
 			children = (
 				F4D8340929AC9118008D8623 /* HomeView.swift */,
+				F4A6022029ACD9530010C04D /* ProfileView.swift */,
 				F4A6021829AC9EB60010C04D /* ActivityView.swift */,
 				F4A6021E29ACB45D0010C04D /* ActivityRingView.swift */,
+				F4A6022229ACDAB70010C04D /* ExerciseListView.swift */,
+				F4A6022429ACDBC80010C04D /* ExerciseDetailView.swift */,
+				F4A6022629ACDF380010C04D /* ExerciseCardView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -172,12 +184,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4D833FC29AC83A5008D8623 /* ContentView.swift in Sources */,
+				F4A6022129ACD9530010C04D /* ProfileView.swift in Sources */,
+				F4A6022729ACDF380010C04D /* ExerciseCardView.swift in Sources */,
 				F4A6021F29ACB45D0010C04D /* ActivityRingView.swift in Sources */,
 				F4A6021729AC96230010C04D /* SecondView.swift in Sources */,
 				F4D8340A29AC9118008D8623 /* HomeView.swift in Sources */,
 				F4A6021D29ACB3CD0010C04D /* RingShape.swift in Sources */,
 				F4D833FA29AC83A5008D8623 /* SwiftUIStudyApp.swift in Sources */,
 				F4D8340829AC90C5008D8623 /* MainTabView.swift in Sources */,
+				F4A6022529ACDBC80010C04D /* ExerciseDetailView.swift in Sources */,
+				F4A6022329ACDAB70010C04D /* ExerciseListView.swift in Sources */,
 				F4A6021929AC9EB60010C04D /* ActivityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

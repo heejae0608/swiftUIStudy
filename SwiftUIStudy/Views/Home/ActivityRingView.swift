@@ -28,8 +28,9 @@ struct ActivityRingView: View {
         .fill(self.foregroundColor)
       }
       .onAppear {
+        animate = false
         withAnimation(.linear(duration: 0.5)) {
-          animate.toggle()
+          animate = true
         }
       }
     }
