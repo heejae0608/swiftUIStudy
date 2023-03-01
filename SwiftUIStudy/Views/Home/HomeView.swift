@@ -14,7 +14,7 @@ struct HomeView: View {
         VStack(spacing: 15.0) {
           ProfileView()
           ActivityView()
-          ExerciseListView(exercises: ["Test"])
+          ExerciseListView(exercises: ["Test", "Test"])
           Spacer()
         }
         .padding(.horizontal, 10.0)
@@ -23,6 +23,7 @@ struct HomeView: View {
       .background(.black)
       .navigationBarHidden(true)
     }
+    .tint(.clear)
   }
 }
 

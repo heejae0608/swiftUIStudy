@@ -9,39 +9,40 @@ import SwiftUI
 
 struct ExerciseCardView: View {
   var body: some View {
-    HStack {
-//      Image("strengthtraining")
-//        .resizable()
-//        .aspectRatio(34/43, contentMode: .fit)
-//        .frame(minWidth: 30, maxWidth: 30)
-//        .padding()
-      
-      
-      VStack(alignment: .leading) {
-        Text("기능성 근력 강화 운동")
-          .foregroundColor(.white)
-        Text("692CAL")
-          .font(.title2)
-          .fontWeight(.semibold)
-          .foregroundColor(.green)
-      }
-      
-      Spacer()
-      
-      VStack {
+    ZStack {
+      Color.secondary
+      HStack(alignment: .center) {
+        Image("strengthtraining")
+          .resizable()
+          .aspectRatio(34/43, contentMode: .fit)
+          .frame(maxHeight: 40)
+          .padding()
+        
+        VStack(alignment: .leading) {
+          Text("기능성 근력 강화 운동")
+            .foregroundColor(.white)
+          Text("692CAL")
+            .font(.title2)
+            .fontWeight(.semibold)
+            .foregroundColor(.green)
+        }
+        
+        Spacer()
+        
         Text("일요일 >")
           .font(.caption)
-          .foregroundColor(.gray)
-          .padding([.top, .trailing])
+          .foregroundColor(Color(UIColor.lightGray))
+          .frame(minHeight: 40, alignment: .bottom)
+          .padding(.trailing)
       }
     }
-    .background(.black)
+    .cornerRadius(5)
   }
 }
 
 struct ExerciseCardView_Previews: PreviewProvider {
   static var previews: some View {
     ExerciseCardView()
-      .frame(width: 350, height: 80, alignment: .center)
+      .background(.black)
   }
 }

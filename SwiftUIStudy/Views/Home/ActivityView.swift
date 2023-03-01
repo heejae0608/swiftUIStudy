@@ -105,9 +105,6 @@ struct ActivityView: View {
       }
       .background(.secondary)
       .cornerRadius(5)
-      
-      
-      
     }
     .background(.black)
   }

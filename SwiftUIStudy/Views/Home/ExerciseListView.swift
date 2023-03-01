@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ExerciseListView: View {
+  
   @State var exercises = [String]()
+  
   var body: some View {
     VStack(alignment: .leading, spacing: 10) {
       HStack {
@@ -18,14 +20,13 @@ struct ExerciseListView: View {
           .foregroundColor(.white)
         Spacer()
       }
-      VStack {
-        ForEach(exercises, id: \.self) { _ in
-          NavigationLink (destination: ExerciseDetailView(Title: "")) {
+      VStack(spacing: 4) {
+        ForEach(exercises, id: \.self) { str in
+          NavigationLink (destination: ExerciseDetailView(Title: str)) {
             ExerciseCardView()
           }
         }
       }
-      Spacer()
     }
     .background(.black)
   }
