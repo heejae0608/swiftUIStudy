@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41B2E0729AF9212002BCFE8 /* HealthKitResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B2E0629AF9212002BCFE8 /* HealthKitResult.swift */; };
 		F4A6021729AC96230010C04D /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6021629AC96230010C04D /* SecondView.swift */; };
 		F4A6021929AC9EB60010C04D /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6021829AC9EB60010C04D /* ActivityView.swift */; };
 		F4A6021D29ACB3CD0010C04D /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6021C29ACB3CD0010C04D /* RingShape.swift */; };
@@ -15,6 +16,10 @@
 		F4A6022329ACDAB70010C04D /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6022229ACDAB70010C04D /* ExerciseListView.swift */; };
 		F4A6022529ACDBC80010C04D /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6022429ACDBC80010C04D /* ExerciseDetailView.swift */; };
 		F4A6022729ACDF380010C04D /* ExerciseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6022629ACDF380010C04D /* ExerciseCardView.swift */; };
+		F4A6022B29AF2AD20010C04D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A6022A29AF2AD20010C04D /* HealthKit.framework */; };
+		F4A6022E29AF2D580010C04D /* HelathKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6022D29AF2D580010C04D /* HelathKitService.swift */; };
+		F4A6023029AF3B3F0010C04D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6022F29AF3B3F0010C04D /* HomeViewModel.swift */; };
+		F4A6023429AF456D0010C04D /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6023329AF456D0010C04D /* ActivityModel.swift */; };
 		F4D833FA29AC83A5008D8623 /* SwiftUIStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D833F929AC83A5008D8623 /* SwiftUIStudyApp.swift */; };
 		F4D833FC29AC83A5008D8623 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D833FB29AC83A5008D8623 /* ContentView.swift */; };
 		F4D833FE29AC83A6008D8623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D833FD29AC83A6008D8623 /* Assets.xcassets */; };
@@ -24,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F41B2E0529AF8792002BCFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F41B2E0629AF9212002BCFE8 /* HealthKitResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitResult.swift; sourceTree = "<group>"; };
 		F4A6021629AC96230010C04D /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		F4A6021829AC9EB60010C04D /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		F4A6021C29ACB3CD0010C04D /* RingShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
@@ -32,6 +39,11 @@
 		F4A6022229ACDAB70010C04D /* ExerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
 		F4A6022429ACDBC80010C04D /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
 		F4A6022629ACDF380010C04D /* ExerciseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCardView.swift; sourceTree = "<group>"; };
+		F4A6022829AF2AD20010C04D /* SwiftUIStudy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIStudy.entitlements; sourceTree = "<group>"; };
+		F4A6022A29AF2AD20010C04D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F4A6022D29AF2D580010C04D /* HelathKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelathKitService.swift; sourceTree = "<group>"; };
+		F4A6022F29AF3B3F0010C04D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F4A6023329AF456D0010C04D /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		F4D833F629AC83A5008D8623 /* SwiftUIStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D833F929AC83A5008D8623 /* SwiftUIStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStudyApp.swift; sourceTree = "<group>"; };
 		F4D833FB29AC83A5008D8623 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,12 +58,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A6022B29AF2AD20010C04D /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F41B2E0829AF9B85002BCFE8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6022F29AF3B3F0010C04D /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		F4A6021A29ACB3040010C04D /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +99,37 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		F4A6022929AF2AD20010C04D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6022A29AF2AD20010C04D /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4A6022C29AF2D4B0010C04D /* HealthKitService */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6022D29AF2D580010C04D /* HelathKitService.swift */,
+				F41B2E0629AF9212002BCFE8 /* HealthKitResult.swift */,
+			);
+			path = HealthKitService;
+			sourceTree = "<group>";
+		};
+		F4A6023229AF45570010C04D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6023329AF456D0010C04D /* ActivityModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F4D833ED29AC83A5008D8623 = {
 			isa = PBXGroup;
 			children = (
 				F4D833F829AC83A5008D8623 /* SwiftUIStudy */,
 				F4D833F729AC83A5008D8623 /* Products */,
+				F4A6022929AF2AD20010C04D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +144,11 @@
 		F4D833F829AC83A5008D8623 /* SwiftUIStudy */ = {
 			isa = PBXGroup;
 			children = (
+				F41B2E0829AF9B85002BCFE8 /* ViewModels */,
+				F41B2E0529AF8792002BCFE8 /* Info.plist */,
+				F4A6023229AF45570010C04D /* Models */,
+				F4A6022C29AF2D4B0010C04D /* HealthKitService */,
+				F4A6022829AF2AD20010C04D /* SwiftUIStudy.entitlements */,
 				F4A6021A29ACB3040010C04D /* Views */,
 				F4D833F929AC83A5008D8623 /* SwiftUIStudyApp.swift */,
 				F4D833FD29AC83A6008D8623 /* Assets.xcassets */,
@@ -188,11 +240,15 @@
 				F4A6022729ACDF380010C04D /* ExerciseCardView.swift in Sources */,
 				F4A6021F29ACB45D0010C04D /* ActivityRingView.swift in Sources */,
 				F4A6021729AC96230010C04D /* SecondView.swift in Sources */,
+				F4A6023429AF456D0010C04D /* ActivityModel.swift in Sources */,
+				F4A6022E29AF2D580010C04D /* HelathKitService.swift in Sources */,
 				F4D8340A29AC9118008D8623 /* HomeView.swift in Sources */,
 				F4A6021D29ACB3CD0010C04D /* RingShape.swift in Sources */,
 				F4D833FA29AC83A5008D8623 /* SwiftUIStudyApp.swift in Sources */,
+				F4A6023029AF3B3F0010C04D /* HomeViewModel.swift in Sources */,
 				F4D8340829AC90C5008D8623 /* MainTabView.swift in Sources */,
 				F4A6022529ACDBC80010C04D /* ExerciseDetailView.swift in Sources */,
+				F41B2E0729AF9212002BCFE8 /* HealthKitResult.swift in Sources */,
 				F4A6022329ACDAB70010C04D /* ExerciseListView.swift in Sources */,
 				F4A6021929AC9EB60010C04D /* ActivityView.swift in Sources */,
 			);
@@ -320,12 +376,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIStudy/SwiftUIStudy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIStudy/Preview Content\"";
+				DEVELOPMENT_TEAM = 6J7U94Y753;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SwiftUIStudy/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Health Kit Read";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Health Kit Read";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -348,12 +408,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIStudy/SwiftUIStudy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIStudy/Preview Content\"";
+				DEVELOPMENT_TEAM = 6J7U94Y753;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SwiftUIStudy/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Health Kit Read";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Health Kit Read";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

@@ -10,7 +10,7 @@ import SwiftUI
 struct ExerciseCardView: View {
   var body: some View {
     ZStack {
-      Color.secondary
+      Color(red: 28/255, green: 27/255, blue: 29/255)
       HStack(alignment: .center) {
         Image("strengthtraining")
           .resizable()

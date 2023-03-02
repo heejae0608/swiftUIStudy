@@ -27,6 +27,7 @@ struct RingShape: Shape {
   }
   
   init(percent: Double = 100, startAngle: Double = -90, drawnClockwise: Bool = false) {
+    
     self.percent = percent
     self.startAngle = startAngle
     self.drawnClockwise = drawnClockwise

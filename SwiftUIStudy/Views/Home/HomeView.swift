@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
+  @ObservedObject var viewModel = HomeViewModel()
+  
   var body: some View {
     NavigationView {
       ScrollView(.vertical, showsIndicators: false) {
         VStack(spacing: 15.0) {
+          
           ProfileView()
-          ActivityView()
+          ActivityView(activityModel: $viewModel.activityModel)
           ExerciseListView(exercises: ["Test", "Test"])
           Spacer()
         }
@@ -24,6 +27,9 @@ struct HomeView: View {
       .navigationBarHidden(true)
     }
     .tint(.clear)
+    .onAppear() {
+      viewModel.updateActivity()
+    }
   }
 }
 

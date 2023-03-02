@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ActivityView: View {
+  @Binding var activityModel: ActivityModel
+  
   var body: some View {
     VStack(alignment: .leading, spacing: 10) {
       HStack {
@@ -23,19 +25,19 @@ struct ActivityView: View {
               VStack(alignment: .leading) {
                 Text("움직이기")
                   .foregroundColor(Color.white)
-                  
-                Text("7/600CAL")
-                  .fontWeight(.bold)
-                  .foregroundColor(Color.red)
-              }
-              
-              VStack(alignment: .leading) {
-                Text("운동하기")
-                  .foregroundColor(Color.white)
                 
-                Text("0/40분")
-                  .fontWeight(.bold)
-                  .foregroundColor(Color.green)
+                Text("\(activityModel.activeEnergyBurned.activeEnergyBurnedStr) / \(activityModel.activeEnergyBurned.activeEnergyBurnedGoalStr)")
+                      .fontWeight(.bold)
+                      .foregroundColor(Color.red)
+                       }
+                       
+                       VStack(alignment: .leading) {
+                  Text("운동하기")
+                    .foregroundColor(Color.white)
+                  
+                  Text("0/40분")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.green)
               }
               
               VStack(alignment: .leading) {
@@ -50,22 +52,19 @@ struct ActivityView: View {
             Spacer()
             ZStack {
               ActivityRingView(
-                ringWidth: 13,
-                percent: 60,
+                percent: activityModel.activeEnergyBurned.activeEnergyBurnGoalPercent, ringWidth: 13,
                 backgroundColor: Color(red: 58/255, green: 24/255, blue: 29/255),
                 foregroundColor: .red)
               .frame(width: 100, height: 100, alignment: .center)
-              
+
               ActivityRingView(
-                ringWidth: 13,
-                percent: 40,
+                percent: 40, ringWidth: 13,
                 backgroundColor:  Color(red: 33/255, green: 56/255, blue: 27/255),
                 foregroundColor: .green)
               .frame(width: 70, height: 70, alignment: .center)
-              
+
               ActivityRingView(
-                ringWidth: 13,
-                percent: 20,
+                percent: 20, ringWidth: 13,
                 backgroundColor:  Color(red: 23/255, green: 52/255, blue: 59/255),
                 foregroundColor: .blue)
               .frame(width: 40, height: 40, alignment: .center)
@@ -103,7 +102,7 @@ struct ActivityView: View {
         }
         .padding(EdgeInsets(top: 10, leading: 15, bottom: 20, trailing: 150))
       }
-      .background(.secondary)
+      .background(Color(red: 28/255, green: 27/255, blue: 29/255))
       .cornerRadius(5)
     }
     .background(.black)
@@ -112,6 +111,14 @@ struct ActivityView: View {
 
 struct ActivityView_Previews: PreviewProvider {
   static var previews: some View {
-    ActivityView()
+    ActivityView(activityModel: .constant(ActivityModel(
+      activeEnergyBurned: ActiveEnergyBurned(activeEnergyBurned: 300.0,
+                                             activeEnergyBurnedGoal: 600.0),
+      exerciseTime: 20.0,
+      exerciseTimeGoal: 30.0,
+      exerciseTimePercent: 20.0 / 30.0,
+      standMinute: 1.0,
+      standGoalMinute: 12.0,
+      standPercent: 1.0 / 12.0)))
   }
 }
